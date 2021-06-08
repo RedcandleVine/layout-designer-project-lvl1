@@ -1,1 +1,53 @@
 /** CSS STYLE **/
+@font-face {
+    font-family: "NeuchaRegular";
+    src: url("../fonts/NeuchaRegular/NeuchaRegular.eot");
+    src: url("../fonts/NeuchaRegular/NeuchaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/NeuchaRegular/NeuchaRegular.woff") format("woff"),
+    url("../fonts/NeuchaRegular/NeuchaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("/src/fonts/OpenSans-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url("/src/fonts/OpenSans-Bold.ttf");
+    font-weight: 400;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.background {
+    background-image: url("../src/images/background.png") no-repeat 100% 50%;
+    background-color: #F5F4F0;
+}
+
+h1 {
+    font-family: "NeuchaRegular", sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    
+    color: #FE8A02;
+}
+
+/* .main-title {
+    
+} */
+
+h1 span {
+    color: #2A2626;
+}
+
+header img {
+    z-index: 9999;
+    justify-content: right;
+}
