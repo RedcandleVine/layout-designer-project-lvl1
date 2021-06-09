@@ -1,10 +1,7 @@
 /** CSS STYLE **/
 @font-face {
     font-family: "NeuchaRegular";
-    src: url("../fonts/NeuchaRegular/NeuchaRegular.eot");
-    src: url("../fonts/NeuchaRegular/NeuchaRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/NeuchaRegular/NeuchaRegular.woff") format("woff"),
-    url("../fonts/NeuchaRegular/NeuchaRegular.ttf") format("truetype");
+    src: url("../fonts/NeuchaRegular.ttf");
     font-style: normal;
     font-weight: normal;
 }
@@ -34,10 +31,10 @@ body {
 }
 
 .background {
-    background: url("../images/background.png") no-repeat 0 0;
+    background: url("../images/image-1.png") no-repeat 0 0;
     background-color: #F5F4F0;
 
-    padding: 40px 0;
+    padding: 40px 0 100px 0;
 }
 
 h1 {
@@ -66,19 +63,18 @@ header img {
     right: -250px;
 }
 
+.main-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .main-column {
-    position: relative;
-    z-index: 9999;
-    
-    column-count: 2;
-    margin-top: 0;
+    width: 49%;
 }
 
-.main-column:nth-child(3) {
-    padding-bottom: 40px;
-}
 .btn-more {
     font-weight: bold;
+    line-height: 26px;
     text-transform: uppercase;
     color: #FFFFFF;
     text-decoration: none;
@@ -86,4 +82,8 @@ header img {
     background: #FE8A02;
     
     padding: 11px 24px;
+}
+
+.main-column:nth-child(2) {
+    margin-bottom: 40px;
 }
