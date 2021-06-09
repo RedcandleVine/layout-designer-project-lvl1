@@ -10,15 +10,22 @@
 }
 
 @font-face {
-    font-family: "OpenSans-Regular";
-    src: url("/src/fonts/OpenSans-Regular.ttf");
+    font-family: "OpenSans";
+    src: url("/fonts/OpenSans-Regular.ttf");
     font-weight: 400;
 }
 
 @font-face {
     font-family: "OpenSans-Bold";
-    src: url("/src/fonts/OpenSans-Bold.ttf");
+    src: url("/fonts/OpenSans-Bold.ttf");
     font-weight: 400;
+}
+
+body {
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2A2626;
 }
 
 .wrapper {
@@ -27,27 +34,56 @@
 }
 
 .background {
-    background-image: url("../src/images/background.png") no-repeat 100% 50%;
+    background: url("../images/background.png") no-repeat 0 0;
     background-color: #F5F4F0;
+
+    padding: 40px 0;
 }
 
 h1 {
+    position: relative;
+    z-index: 9999;
+
     font-family: "NeuchaRegular", sans-serif;
     font-size: 72px;
     font-weight: 400;
+    line-height: 1.4;
     
     color: #FE8A02;
 }
 
-/* .main-title {
-    
-} */
+.main-title {
+    margin-bottom: 180px;
+}
 
 h1 span {
     color: #2A2626;
 }
 
 header img {
+    position: absolute;
+    top: 60px;
+    right: -250px;
+}
+
+.main-column {
+    position: relative;
     z-index: 9999;
-    justify-content: right;
+    
+    column-count: 2;
+    margin-top: 0;
+}
+
+.main-column:nth-child(3) {
+    padding-bottom: 40px;
+}
+.btn-more {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    background: #FE8A02;
+    
+    padding: 11px 24px;
 }
