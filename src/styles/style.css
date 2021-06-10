@@ -38,7 +38,7 @@ body {
 }
 
 h1 {
-    position: relative;
+    
     z-index: 9999;
 
     font-family: "NeuchaRegular", sans-serif;
@@ -58,7 +58,7 @@ h1 span {
     color: #2A2626;
 }
 
-header img {
+.main-title img {
     position: absolute;
     top: 60px;
     right: -250px;
@@ -87,4 +87,8 @@ header img {
 
 .main-column:nth-child(2) {
     margin-bottom: 40px;
+}
+
+.determination {
+    background: #FFFFFF;
 }
