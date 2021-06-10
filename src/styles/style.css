@@ -50,6 +50,7 @@ h1 {
 }
 
 .main-title {
+    position: relative;
     margin-bottom: 180px;
 }
 
