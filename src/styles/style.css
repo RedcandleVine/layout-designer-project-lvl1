@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: "OpenSans-Bold", sans-serif;
+    font-family: "OpenSans", sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: #2A2626;
@@ -89,6 +89,53 @@ h1 span {
     margin-bottom: 40px;
 }
 
-.determination {
-    background: #FFFFFF;
+.bg-white {
+    background-color: #FFFFFF;
+    padding: 100px 0;
+}
+
+.bg-dark {
+        background-color: #42413C;
+}
+
+.types-of-distortion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.types-title {
+    background: transparent;
+}
+
+.types-title {
+    font-family: "NeuchaRegular", sans-serif;
+    font-size: 52px;
+    line-height: 62px;
+    color: #FE8A02;
+}
+
+.types-title > span {
+    color: #FFFFFF;
+}
+
+.type-number {
+    font-family: "NeuchaRegular", sans-serif;
+    font-size: 64px;
+    line-height: 1;
+    color: #42413C;
+}
+
+.type-name h3 {
+    font-family: "NeuchaRegular", sans-serif;
+    font-size: 34px;
+    line-height: 1.2;
+    color: #FE8A02;
+}
+
+.type-of-distortion,
+.types-title {
+    width: 350px;
+    height: 323px;
 }
