@@ -30,9 +30,18 @@ body {
     margin: 0 auto;
 }
 
-.background {
+.background-beige {
     background: url("../images/image-1.png") no-repeat 0 0;
     background-color: #F5F4F0;
+}
+
+.pt40-pb100 {
+    padding: 40px 0 100px 0;
+}
+
+.background-sand {
+    background: url("../images/image-1.png") no-repeat 0 0;
+    background-color: #B09A81;
 
     padding: 40px 0 100px 0;
 }
@@ -91,11 +100,33 @@ h1 span {
 
 .bg-white {
     background-color: #FFFFFF;
-    padding: 100px 0;
 }
 
 .bg-dark {
         background-color: #42413C;
+}
+
+.pt100-pb80 {
+    padding: 100px 0 80px 0;
+}
+
+.pt-100-pb-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.middle-title {
+    font-family: "NeuchaRegular", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1.2;
+}
+.middle-title > span {
+    color: #FE8A02;
+}
+
+.video-block {
+    text-align: center;
 }
 
 .types-of-distortion {
@@ -125,6 +156,8 @@ h1 span {
     font-size: 64px;
     line-height: 1;
     color: #42413C;
+
+    margin-bottom: 40px;
 }
 
 .type-name h3 {
@@ -132,10 +165,74 @@ h1 span {
     font-size: 34px;
     line-height: 1.2;
     color: #FE8A02;
+
+    margin-bottom: 16px;
 }
 
 .type-of-distortion,
 .types-title {
-    width: 350px;
-    height: 323px;
+    max-width: 350px;
+    max-height: 350px;
+    margin-bottom: 20px;
+}
+
+.type-of-distortion {
+    padding: 24px;
+}
+
+.section-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.little-title {
+    font-family: "NeuchaRegular", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.short-descr {
+    font-family: "NeuchaRegular", sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 41px;
+}
+
+.breaker {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    background-color: #B09A81;
+
+    padding: 5px 0 5px 10px;
+    margin: 100px 0 20px 0;
+}
+
+.long-descr {
+    display: flex;
+    flex-direction: row;
+}
+
+.column-1,
+.column-2 {
+    width: 50%;
+}
+
+.block-img {
+    padding-right: 30px;
+}
+
+.block-img > img {
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.short-descr {
+    margin-top: 30px;
 }
