@@ -35,14 +35,12 @@ body {
     background-color: #F5F4F0;
 }
 
-.pt40-pb100 {
-    padding: 40px 0 100px 0;
-}
-
 .background-sand {
     background: url("../images/image-1.png") no-repeat 0 0;
     background-color: #B09A81;
+}
 
+.pt40-pb100 {
     padding: 40px 0 100px 0;
 }
 
@@ -110,7 +108,7 @@ h1 span {
     padding: 100px 0 80px 0;
 }
 
-.pt-100-pb-100 {
+.pt100-pb100 {
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -180,27 +178,55 @@ h1 span {
     padding: 24px;
 }
 
-.section-top {
+/* описания когнитивных искажений */
+
+.background-beige .section-top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.little-title {
+.background-sand .section-top {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.background-beige .little-title {
     font-family: "NeuchaRegular", sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 1.2;
 }
 
-.short-descr {
+.background-sand .little-title {
+    font-family: "NeuchaRegular", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #D7CCC0;
+}
+
+.background-sand .middle-title {
+    color: #FFFFFF;
+}
+
+.background-beige .short-descr {
     font-family: "NeuchaRegular", sans-serif;
     font-weight: 400;
     font-size: 34px;
     line-height: 41px;
 }
 
-.breaker {
+.background-sand .short-descr {
+    font-family: "NeuchaRegular", sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+.background-beige .breaker {
     font-family: "OpenSans", sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -210,6 +236,21 @@ h1 span {
     color: #FFFFFF;
 
     background-color: #B09A81;
+
+    padding: 5px 0 5px 10px;
+    margin: 100px 0 20px 0;
+}
+
+.background-sand .breaker {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    color: #B09A81;
+
+    background-color: #FFFFFF;
 
     padding: 5px 0 5px 10px;
     margin: 100px 0 20px 0;
@@ -225,7 +266,13 @@ h1 span {
     width: 50%;
 }
 
-.block-img {
+.background-sand .column-1,
+.background-sand .column-2 {
+    width: 50%;
+    color: #FFFFFF;
+}
+
+.background-beige .block-img {
     padding-right: 30px;
 }
 
@@ -235,4 +282,124 @@ h1 span {
 
 .short-descr {
     margin-top: 30px;
+}
+
+/* футер */
+
+.subscribe-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    background-color: #42413C;
+
+    margin-bottom: 76px;
+}
+
+.subscribe-form-txt,
+.email-section {
+    width: 50%;
+}
+
+
+.subscribe-form-txt {
+    font-family: "NeuchaRegular", sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.2;
+    
+    color: #FFFFFF;
+
+    padding: 55px 0 55px 55px;
+}
+
+.email-section {
+    padding: 38px 0 40px 0;
+}
+
+.form-consent {
+    font-family: "OpenSans", sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+
+    color: #FFFFFF;
+}
+
+.label-email {
+    font-family: "OpenSans", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+
+    color: #FFFFFF;
+
+    margin-bottom: 9px;
+}
+
+.form-email {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-email {
+    min-width: none;
+}
+
+.input-email {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 400;
+    font-size: 13.1px;
+
+    color: #757575;
+    border: none; 
+
+    padding-left: 15px;
+    margin-right: -1px;
+
+    width: 415px;
+    height: 50px;
+   
+}
+
+/* input[placeholder] {
+    opacity: 0.2;
+} */
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    margin-bottom: 4px;
+}
+
+.form-consent {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    
+    color: #FFFFFF;
+}
+
+.form-consent > a {
+    color: #FFFFFF;
+}
+
+.subscribe-button {
+    width: 70px;
+    height: 50px;
+
+    background-color: #FE8A02;
+    border: none;
+}
+
+.footer-info {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+
+    text-align: center;
+    
+    color: #000000;
+
+    margin-bottom: 11px;
 }
