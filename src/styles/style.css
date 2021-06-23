@@ -360,6 +360,10 @@ h3.type-name {
   padding-right: 25px;
 }
 
+.background-sand .block-img {
+  padding-left: 25px;
+}
+
 .background-beige:last-of-type .middle-title {
   white-space: nowrap;
 }
