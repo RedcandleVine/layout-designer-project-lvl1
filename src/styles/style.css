@@ -1,25 +1,25 @@
 /** CSS STYLE **/
 @font-face {
+  font-weight: 400;
   font-family: "NeuchaRegular";
-  font-weight: normal;
   font-style: normal;
   src: url("../fonts/NeuchaRegular.ttf");
 }
 
 @font-face {
-  font-family: "OpenSans";
   font-weight: 400;
-  src: url("/fonts/OpenSans-Regular.ttf");  
+  font-family: "OpenSans";
+  src: url("/fonts/OpenSans-Regular.ttf");
 }
 
 @font-face {
-  font-family: "OpenSans-Bold";
   font-weight: 400;
-  src: url("/fonts/OpenSans-Bold.ttf"); 
+  font-family: "OpenSans-Bold";
+  src: url("/fonts/OpenSans-Bold.ttf");
 }
 
 body {
-  color: #2A2626;
+  color: #2a2626;
   font-size: 16px;
   font-family: "OpenSans", sans-serif;
   line-height: 1.6;
@@ -35,14 +35,14 @@ body {
 .background-beige {
   background: url("../images/image-1.png") no-repeat 0 0;
   background-color: #f5f4f0;
-  background-size: cover;  
   overflow: hidden;
+  background-size: cover;
 }
 
 .background-sand {
   background: url("../images/image-1.png") no-repeat 0 0;
   background-color: #b09a81;
-  background-size: cover;  
+  background-size: cover;
 }
 
 .pt40 {
@@ -69,11 +69,9 @@ body {
 
 h1 {
   position: relative;
-    
-  margin: 0;
+  z-index: 100; 
+  margin: 0;   
   padding: 0;
-
-  z-index: 100;
 
   color: #fe8a02;
   font-weight: 400;
@@ -84,7 +82,6 @@ h1 {
 
 .main-title {
   position: relative;
-  
   margin-bottom: 190px;
 }
 
@@ -114,7 +111,7 @@ h1 span {
 .main-column {
   z-index: 1;
 
-  width: 49%;    
+  width: 49%;
 }
 
 .main-column p:last-of-type {
@@ -124,11 +121,10 @@ h1 span {
 .btn-more {
   padding: 11px 24px;
 
+  color: #fff;
   font-weight: 700;
   line-height: 26px;
-  color: #ffffff;
   text-transform: uppercase;
-  
   text-decoration: none;
 
   background: #fe8a02;
@@ -141,7 +137,7 @@ h1 span {
 /* Видео-блок */
 
 .bg-white {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .bg-dark {
@@ -156,9 +152,9 @@ h2 {
   margin: 0;
   padding: 0;
 
-  font-weight: 400;  
-  font-family: "NeuchaRegular", sans-serif;
+  font-weight: 400;
   font-size: 60px;
+  font-family: "NeuchaRegular", sans-serif;
   line-height: 1.2;
 }
 
@@ -179,7 +175,6 @@ iframe {
   top: 100px;
 
   margin-top: -70px;
-  
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
@@ -190,7 +185,7 @@ iframe {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  }
+}
 
 .link-type {
   text-decoration: none;
@@ -207,21 +202,19 @@ iframe {
   font-size: 52px;
   font-family: "NeuchaRegular", sans-serif;
   line-height: 62px;
-  
   background: transparent;
 }
 
 .types-title > span {
-  color: #ffffff;
+  color: #fff;
 }
 
 .type-number {
   margin-bottom: 40px;
-  
+  color: #42413c;
   font-size: 64px;
   font-family: "NeuchaRegular", sans-serif;
   line-height: 1;
-  color: #42413c;
 }
 
 h3.type-name {
@@ -231,7 +224,8 @@ h3.type-name {
   font-weight: 400;
   font-size: 34px;
   font-family: "NeuchaRegular", sans-serif;
-  line-height: 1.2;      
+  line-height: 1.2;
+
 }
 
 .type-of-distortion,
@@ -267,22 +261,21 @@ h3.type-name {
 
 .background-beige .little-title {
   font-weight: 400;
-  font-family: "NeuchaRegular", sans-serif;
   font-size: 24px;
+  font-family: "NeuchaRegular", sans-serif;
   line-height: 1.2;
 }
 
 .background-sand .little-title {
   color: #d7ccc0;
   font-weight: 400;
-  font-family: "NeuchaRegular", sans-serif;
   font-size: 24px;
+  font-family: "NeuchaRegular", sans-serif;
   line-height: 1.2;
-    
 }
 
 .background-sand h2 {
-  color: #ffffff;
+  color: #fff;
 }
 
 .short-descr {
@@ -291,32 +284,32 @@ h3.type-name {
 
 .background-beige .short-descr {
   font-weight: 400;
-  font-family: "NeuchaRegular", sans-serif;
   font-size: 34px;
+  font-family: "NeuchaRegular", sans-serif;
   line-height: 41px;
 }
 
 .background-sand .short-descr {
-  color: #ffffff;
+  color: #fff;
   font-weight: 400;
-  font-family: "NeuchaRegular", sans-serif;
   font-size: 34px;
+  font-family: "NeuchaRegular", sans-serif;
   line-height: 41px;
-  }
+}
 
 .background-beige .breaker {
   margin: 100px 0 20px 0;
   padding: 5px 0 5px 10px;
 
-  color: #ffffff;
+  color: #fff;
   font-weight: 700;
-  font-family: "OpenSans", sans-serif;
   font-size: 14px;
+  font-family: "OpenSans", sans-serif;
   line-height: 1.2;
   text-transform: uppercase;
-    
+  
   background-color: #b09a81;
-  }
+}
 
 .background-sand .breaker {
   margin: 100px 0 20px 0;
@@ -324,13 +317,13 @@ h3.type-name {
 
   color: #b09a81;
   font-weight: 700;
-  font-family: "OpenSans", sans-serif;
   font-size: 14px;
+  font-family: "OpenSans", sans-serif;
   line-height: 1.2;
   text-transform: uppercase;
 
-  background-color: #ffffff;
-  }
+  background-color: #fff;
+}
 
 .long-descr {
   display: flex;
@@ -345,7 +338,8 @@ h3.type-name {
 .background-sand .column-1,
 .background-sand .column-2 {
   width: 50%;
-  color: #ffffff;
+
+  color: #fff;
 }
 
 .background-beige .block-img {
@@ -359,11 +353,11 @@ h3.type-name {
 /* Футер */
 
 .subscribe-form {
-  margin-bottom: 76px;
-
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+
+  margin-bottom: 76px;
 
   background-color: #42413c;
 }
@@ -376,10 +370,10 @@ h3.type-name {
 .subscribe-form-txt {
   padding: 55px 0 55px 55px;
 
-  color: #ffffff;
+  color: #fff;
   font-weight: 400;
-  font-family: "NeuchaRegular", sans-serif;
   font-size: 34px;
+  font-family: "NeuchaRegular", sans-serif;
   line-height: 1.2;
 }
 
@@ -388,19 +382,19 @@ h3.type-name {
 }
 
 .form-consent {
-  color: #ffffff;
+  color: #fff;
   font-weight: 400;
-  font-family: "OpenSans", sans-serif;
   font-size: 12px;
+  font-family: "OpenSans", sans-serif;
 }
 
 .label-email {
   margin-bottom: 9px;
 
-  color: #ffffff;
+  color: #fff;
   font-weight: normal;
-  font-family: "OpenSans", sans-serif;    
   font-size: 18px;
+  font-family: "OpenSans", sans-serif;
 }
 
 .form-email {
@@ -410,9 +404,8 @@ h3.type-name {
 
 .input-email {
   width: 415px;
-  height: 50px;
-
   min-width: none;
+  height: 50px;
 
   margin-right: -1px;
   padding-left: 15px;
@@ -421,8 +414,8 @@ h3.type-name {
 
   color: #757575;
   font-weight: 400;
-  font-family: "OpenSans", sans-serif;    
   font-size: 13.1px;
+  font-family: "OpenSans", sans-serif;
 }
 
 input[type="email"]::placeholder {
@@ -437,7 +430,7 @@ input[type="email"]::placeholder {
 }
 
 .form-consent > a {
-  color: #ffffff;
+  color: #fff;
 }
 
 .subscribe-button {
@@ -452,17 +445,16 @@ input[type="email"]::placeholder {
 .subscribe-button::before {
   top: 50%;
   left: 0;
-  
   content: url("../images/send.svg");
-  }
+}
 
 .footer-info {
-  font-weight: 400;
-  font-family: "OpenSans", sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-
   margin-bottom: 11px;
+
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "OpenSans", sans-serif;
+  line-height: 1.6;
 
   color: #000;
 
