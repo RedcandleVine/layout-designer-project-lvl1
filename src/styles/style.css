@@ -28,22 +28,40 @@ body {
 .wrapper {
   position: relative;
 
-  max-width: 1100px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
 .background-beige {
+  position: relative;
+
   overflow: hidden;
 
-  background: url("../images/image-1.png") no-repeat 0 0;
   background-color: #f5f4f0;
-  background-size: cover;
+}
+.background-beige::before,
+.background-sand::before {
+  position: absolute;
+  top: 0;
+  content: "";
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 20;
+
+  background: url(../images/background.png) no-repeat 0 0;
+  background-position: 11% 0;
+
+  opacity: 6%;
 }
 
 .background-sand {
-  background: url("../images/image-1.png") no-repeat 0 0;
+  position: relative;
+
+  overflow: hidden;
+
   background-color: #b09a81;
-  background-size: cover;
 }
 
 .pt40 {
@@ -99,7 +117,7 @@ body {
   top: -45px;
   right: -270px;
 
-  z-index: 1;
+  z-index: 30;
 
   width: auto;
   height: 525px;
@@ -202,6 +220,8 @@ iframe {
 }
 
 .types-title {
+  margin-top: 0;
+
   color: #fe8a02;
   font-size: 52px;
   font-family: "NeuchaRegular", sans-serif;
@@ -358,10 +378,14 @@ h3.type-name {
 
 .background-beige .block-img {
   padding-right: 25px;
+
+  z-index: 30;
 }
 
 .background-sand .block-img {
   padding-left: 25px;
+
+  z-index: 30;
 }
 
 .background-beige:last-of-type .middle-title {
