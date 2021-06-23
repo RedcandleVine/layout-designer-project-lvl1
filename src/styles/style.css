@@ -69,8 +69,9 @@ body {
 
 h1 {
   position: relative;
-  z-index: 100; 
-  margin: 0;   
+  z-index: 100;
+  
+  margin: 0;
   padding: 0;
 
   color: #fe8a02;
@@ -82,6 +83,7 @@ h1 {
 
 .main-title {
   position: relative;
+  
   margin-bottom: 190px;
 }
 
@@ -175,6 +177,7 @@ iframe {
   top: 100px;
 
   margin-top: -70px;
+  
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
@@ -202,6 +205,7 @@ iframe {
   font-size: 52px;
   font-family: "NeuchaRegular", sans-serif;
   line-height: 62px;
+  
   background: transparent;
 }
 
@@ -211,6 +215,7 @@ iframe {
 
 .type-number {
   margin-bottom: 40px;
+  
   color: #42413c;
   font-size: 64px;
   font-family: "NeuchaRegular", sans-serif;
@@ -225,7 +230,6 @@ h3.type-name {
   font-size: 34px;
   font-family: "NeuchaRegular", sans-serif;
   line-height: 1.2;
-
 }
 
 .type-of-distortion,
@@ -307,7 +311,6 @@ h3.type-name {
   font-family: "OpenSans", sans-serif;
   line-height: 1.2;
   text-transform: uppercase;
-  
   background-color: #b09a81;
 }
 
@@ -445,18 +448,18 @@ input[type="email"]::placeholder {
 .subscribe-button::before {
   top: 50%;
   left: 0;
+  
   content: url("../images/send.svg");
 }
 
 .footer-info {
   margin-bottom: 11px;
 
+  color: #000;
   font-weight: 400;
   font-size: 14px;
   font-family: "OpenSans", sans-serif;
   line-height: 1.6;
-
-  color: #000;
 
   text-align: center;
 }
