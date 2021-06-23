@@ -39,7 +39,7 @@ main {
 
 h1 {
   margin: 0.67em 0;
-  
+
   font-size: 2em;
 }
 
@@ -91,7 +91,7 @@ a {
 
 abbr[title] {
   border-bottom: none; /* 1 */
-  
+
   text-decoration: underline; /* 2 */
   text-decoration: underline dotted; /* 2 */
 }
@@ -254,7 +254,7 @@ legend {
 
   max-width: 100%; /* 1 */
   padding: 0; /* 3 */
-  
+
   color: inherit; /* 2 */
 
   white-space: normal; /* 1 */
