@@ -86,7 +86,8 @@ body {
 
 /* Хэдер */
 
-.main-title-txt {
+.main-title-txt,
+h1 {
   position: relative;
   z-index: 100;
 
@@ -208,7 +209,7 @@ iframe {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
-.mt--70 {
+.mt-70 {
   margin-top: -70px;
 }
 
@@ -488,12 +489,8 @@ iframe {
   font-family: "OpenSans", sans-serif;
 }
 
-.p0-15 {
+.p-0-15 {
   padding: 0 15px;
-}
-
-.m--1 {
-  margin-right: -1px;
 }
 
 input[type="email"]::placeholder {
