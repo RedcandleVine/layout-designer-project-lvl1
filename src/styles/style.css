@@ -42,7 +42,7 @@ body {
 
 .background-beige::before,
 .background-sand::before {
-  z-index: 20;
+  z-index: 0;
   
   width: 100%;
   height: 100%;
@@ -52,10 +52,10 @@ body {
 
   content: "";
 
-  background: url(../images/background.png) no-repeat 0 0;
-  background-position: 11% 0;
-
-  opacity: 6%;
+  background: url(../images/image-1.png) no-repeat 0 0;
+  background-position: 50% 0;
+/* 
+  opacity: 6%; */
 }
 
 .background-sand {
@@ -92,9 +92,6 @@ body {
   position: relative;
   z-index: 100;
 
-  margin: 0;
-  padding: 0;
-
   color: #fe8a02;
   font-weight: 400;
   font-size: 72px;
@@ -102,9 +99,19 @@ body {
   line-height: 86px;
 }
 
+m0 {
+  margin: 0;
+}
+
+p0 {
+  padding: 0;
+}
+
 .main-title {
   position: relative;
+}
 
+.mb-185 {
   margin-bottom: 185px;
 }
 
@@ -146,8 +153,6 @@ body {
 }
 
 .btn-more {
-  padding: 16px 23px;
-
   color: #fff;
   font-weight: 700;
   line-height: 26px;
@@ -155,6 +160,10 @@ body {
   text-decoration: none;
 
   background: #fe8a02;
+}
+
+.p-btn-more {
+  padding: 16px 23px;
 }
 
 /* Видео-блок */
@@ -176,9 +185,6 @@ body {
 }
 
 .middle-title {
-  margin: 0;
-  padding: 0;
-
   font-weight: 400;
   font-size: 60px;
   font-family: "NeuchaRegular", sans-serif;
@@ -189,9 +195,9 @@ body {
   color: #fe8a02;
 }
 
-.simple-txt {
+/* .simple-txt {
   margin: 30px 0 0 0;
-}
+} */
 
 .video-block {
   text-align: center;
@@ -201,9 +207,11 @@ iframe {
   position: relative;
   top: 100px;
 
-  margin-top: -70px;
-
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.mt--70 {
+  margin-top: -70px;
 }
 
 /* Виды когнитивных искажений */
@@ -226,8 +234,6 @@ iframe {
 }
 
 .types-title {
-  margin-top: 0;
-
   color: #fe8a02;
   font-size: 52px;
   font-family: "NeuchaRegular", sans-serif;
@@ -236,23 +242,26 @@ iframe {
   background: transparent;
 }
 
+.mt0 {
+  margin-top: 0;
+}
+
 .types-title > span {
   color: #fff;
 }
 
 .type-number {
-  margin-bottom: 40px;
-
   color: #42413c;
   font-size: 64px;
   font-family: "NeuchaRegular", sans-serif;
   line-height: 1;
 }
 
-h3.type-name {
-  margin-top: 40px;
-  margin-bottom: 16px;
+.mb40 {
+  margin-bottom: 40px;
+}
 
+.type-name {
   color: #fe8a02;
   font-weight: 400;
   font-size: 34px;
@@ -260,21 +269,32 @@ h3.type-name {
   line-height: 1.2;
 }
 
+.mt40 {
+  margin-top: 40px;
+}
+
+.mb16 {
+  margin-bottom: 16px;
+}
+
 .type-of-distortion,
 .types-title {
   width: 350px;
   height: auto;
-  margin-bottom: 20px;
 }
 
-.type-of-distortion {
+.mb20 {
+  margin-bottom: 20px;  
+}
+
+.p24 {
   padding: 24px;
 }
 
 .type-of-distortion:hover,
 .type-of-distortion:active {
   background-color: #d7ccc0;
-  box-shadow: 0px 16px 32px rgba(255 255 255 / 0.2);
+  box-shadow: 0 16px 32px rgba(255 255 255 / 0.2);
 }
 
 /* Описания когнитивных искажений */
@@ -310,7 +330,7 @@ h3.type-name {
   color: #fff;
 }
 
-.short-descr {
+.mt30 {
   margin-top: 30px;
 }
 
@@ -330,9 +350,6 @@ h3.type-name {
 }
 
 .background-beige .breaker {
-  margin: 93px 0 20px 0;
-  padding: 5px 0 5px 10px;
-
   color: #fff;
   font-weight: 700;
   font-size: 14px;
@@ -343,10 +360,15 @@ h3.type-name {
   background-color: #b09a81;
 }
 
-.background-sand .breaker {
+.m-breaker {
   margin: 93px 0 20px 0;
-  padding: 5px 0 5px 10px;
+}
 
+.p-breaker {
+  padding: 5px 0 5px 10px;
+}
+
+.background-sand .breaker {
   color: #b09a81;
   font-weight: 700;
   font-size: 14px;
@@ -362,17 +384,13 @@ h3.type-name {
   flex-direction: row;
 }
 
-.column-1 {
+.mr40 {
   margin-right: 40px;
 }
 
 .column-1,
 .column-2 {
   width: 48%;
-}
-
-.background-sand .column-1 {
-  margin-right: 40px;
 }
 
 .background-sand .column-1,
@@ -382,15 +400,15 @@ h3.type-name {
   color: #fff;
 }
 
-.background-beige .block-img {
+.block-img {
   z-index: 30;
-  
+}
+
+.pr25 {  
   padding-right: 25px;
 }
 
-.background-sand .block-img {
-  z-index: 30;
-  
+.pl25 {  
   padding-left: 25px;
 }
 
@@ -398,8 +416,8 @@ h3.type-name {
   white-space: nowrap;
 }
 
-.block-img > img {
-  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.15);
+.block-shadow {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
 }
 
 /* Футер */
@@ -409,9 +427,11 @@ h3.type-name {
   flex-direction: row;
   justify-content: flex-start;
 
-  margin-bottom: 76px;
-
   background-color: #42413c;
+}
+
+.m-subscribe {
+  margin-bottom: 76px;
 }
 
 .subscribe-form-txt,
@@ -420,8 +440,6 @@ h3.type-name {
 }
 
 .subscribe-form-txt {
-  padding: 55px 0 55px 55px;
-
   color: #fff;
   font-weight: 400;
   font-size: 34px;
@@ -429,7 +447,11 @@ h3.type-name {
   line-height: 1.2;
 }
 
-.email-section {
+.p-subscribe {
+  padding: 55px 0 55px 55px;
+}
+
+.p-email {
   padding: 38px 0 40px 0;
 }
 
@@ -441,12 +463,14 @@ h3.type-name {
 }
 
 .label-email {
-  margin-bottom: 9px;
-
   color: #fff;
   font-weight: normal;
   font-size: 18px;
   font-family: "OpenSans", sans-serif;
+}
+
+.m-label {
+  margin-bottom: 9px;
 }
 
 .form-email {
@@ -458,15 +482,20 @@ h3.type-name {
   width: 425px;
   height: 50px;
 
-  margin-right: -1px;
-  padding-left: 15px;
-
   border: none;
 
   color: #757575;
   font-weight: 400;
   font-size: 13.1px;
   font-family: "OpenSans", sans-serif;
+}
+
+.p0-15 {
+  padding: 0 15px;
+}
+
+.m--1 {
+  margin-right: -1px;
 }
 
 input[type="email"]::placeholder {
@@ -477,6 +506,9 @@ input[type="email"]::placeholder {
   display: flex;
   flex-direction: row;
   justify-items: center;
+}
+
+.mb4 {
   margin-bottom: 4px;
 }
 
@@ -501,8 +533,6 @@ input[type="email"]::placeholder {
 }
 
 .footer-info {
-  margin-bottom: 11px;
-
   color: #000;
   font-weight: 400;
   font-size: 15px;
@@ -510,4 +540,12 @@ input[type="email"]::placeholder {
   line-height: 1.6;
 
   text-align: center;
+}
+
+.mb11 {
+  margin-bottom: 11px;
+}
+
+.footer-info a {
+  color: #1085c5;
 }
