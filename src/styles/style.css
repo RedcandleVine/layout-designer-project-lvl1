@@ -43,19 +43,16 @@ body {
 .background-beige::before,
 .background-sand::before {
   z-index: 0;
+  position: absolute;
+  top: 0;
   
   width: 100%;
   height: 100%;
 
-  position: absolute;
-  top: 0;
-
-  content: "";
-
   background: url(../images/image-1.png) no-repeat 0 0;
   background-position: 50% 0;
-/* 
-  opacity: 6%; */
+
+  content: "";
 }
 
 .background-sand {
@@ -99,11 +96,11 @@ body {
   line-height: 86px;
 }
 
-m0 {
+.m0 {
   margin: 0;
 }
 
-p0 {
+.p0 {
   padding: 0;
 }
 
@@ -284,7 +281,7 @@ iframe {
 }
 
 .mb20 {
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
 }
 
 .p24 {
@@ -404,11 +401,11 @@ iframe {
   z-index: 30;
 }
 
-.pr25 {  
+.pr25 {
   padding-right: 25px;
 }
 
-.pl25 {  
+.pl25 {
   padding-left: 25px;
 }
 
