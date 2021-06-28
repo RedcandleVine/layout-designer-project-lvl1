@@ -169,6 +169,10 @@ h1 {
   background-color: #f5f4f0;
 }
 
+.bg-darker-beige {
+  background-color: #b09a81;
+}
+
 .middle-title,
 h2 {
   margin: 0;
@@ -332,35 +336,19 @@ h3 {
   line-height: 0.97;
 }
 
-.background-beige .breaker {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.2;
-  text-transform: uppercase;
-
-  background-color: #b09a81;
-}
-
 h3.breaker {
-  font-family: "OpenSans", sans-serif;
-}
-
-.m-breaker {
   margin: 93px 0 20px 0;
-}
-
-.p-breaker {
   padding: 5px 0 5px 10px;
-}
 
-.background-sand .breaker {
-  color: #b09a81;
   font-weight: 700;
   font-size: 14px;
+  font-family: "OpenSans", sans-serif;  
   line-height: 1.2;
   text-transform: uppercase;
+}
 
-  background-color: #fff;
+.color-sand {
+  color: #b09a81;
 }
 
 .long-descr {
@@ -368,7 +356,7 @@ h3.breaker {
   flex-direction: row;
 }
 
-.mr40 {
+.mr-40 {
   margin-right: 40px;
 }
 
@@ -388,11 +376,11 @@ h3.breaker {
   z-index: 30;
 }
 
-.pr25 {
+.pr-25 {
   padding-right: 25px;
 }
 
-.pl25 {
+.pl-25 {
   padding-left: 25px;
 }
 
@@ -407,15 +395,13 @@ h3.breaker {
 /* Футер */
 
 .subscribe-form {
+  margin-bottom: 76px;
+
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 
   background-color: #42413c;
-}
-
-.m-subscribe {
-  margin-bottom: 76px;
 }
 
 .subscribe-form-txt,
@@ -435,7 +421,7 @@ h3.breaker {
   padding: 55px 0 55px 55px;
 }
 
-.p-email {
+.email-section {
   padding: 38px 0 40px 0;
 }
 
@@ -446,13 +432,11 @@ h3.breaker {
 }
 
 .label-email {
+  margin-bottom: 9px;
+
   color: #fff;
   font-weight: normal;
   font-size: 18px;
-}
-
-.m-label {
-  margin-bottom: 9px;
 }
 
 .form-email {
@@ -485,7 +469,7 @@ input[type="email"]::placeholder {
   justify-items: center;
 }
 
-.mb4 {
+.mb-4 {
   margin-bottom: 4px;
 }
 
@@ -513,7 +497,7 @@ input[type="email"]::placeholder {
   text-align: center;
 }
 
-.mb11 {
+.mb-11 {
   margin-bottom: 11px;
 }
 
