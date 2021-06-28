@@ -131,7 +131,7 @@ h1 {
 .main-column {
   z-index: 1;
 
-  width: 49%;
+  flex: 0 0 49%;
 }
 
 .main-column:first-child {
@@ -143,7 +143,6 @@ h1 {
 }
 
 .btn-more {
-  color: #fff;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
@@ -299,37 +298,22 @@ h3 {
   justify-content: space-between;
 }
 
-.background-beige .little-title {
+.little-title {
   font-weight: 400;
   font-size: 24px;
   font-family: "NeuchaRegular", sans-serif;
   line-height: 1.2;
 }
 
-.background-sand .little-title {
+.color-beige {
   color: #d7ccc0;
-  font-weight: 400;
-  font-size: 24px;
-  font-family: "NeuchaRegular", sans-serif;
-  line-height: 1.2;
-}
-
-.background-sand .middle-title {
-  color: #fff;
 }
 
 .mt-30 {
   margin-top: 30px;
 }
 
-.background-beige .short-descr {
-  font-weight: 400;
-  font-size: 34px;
-  font-family: "NeuchaRegular", sans-serif;
-  line-height: 0.97;
-}
-
-.background-sand .short-descr {
+.short-descr {
   font-weight: 400;
   font-size: 34px;
   font-family: "NeuchaRegular", sans-serif;
@@ -342,7 +326,8 @@ h3.breaker {
 
   font-weight: 700;
   font-size: 14px;
-  font-family: "OpenSans", sans-serif;  
+  font-family: "OpenSans", sans-serif;
+
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -362,14 +347,12 @@ h3.breaker {
 
 .column-1,
 .column-2 {
-  width: 48%;
+  flex: 0 0 48%;
 }
 
 .background-sand .column-1,
 .background-sand .column-2 {
-  width: 48%;
-
-  color: #fff;
+  flex: 0 0 48%;
 }
 
 .block-img {
@@ -395,30 +378,27 @@ h3.breaker {
 /* Футер */
 
 .subscribe-form {
-  margin-bottom: 76px;
-
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+
+  margin-bottom: 76px;
 
   background-color: #42413c;
 }
 
 .subscribe-form-txt,
 .email-section {
-  width: 100%;
+  flex: 0 0 50%;
 }
 
 .subscribe-form-txt {
-  color: #fff;
+  padding: 55px 0 55px 55px;
+
   font-weight: 400;
   font-size: 34px;
   font-family: "NeuchaRegular", sans-serif;
   line-height: 1.2;
-}
-
-.p-subscribe {
-  padding: 55px 0 55px 55px;
 }
 
 .email-section {
@@ -426,7 +406,6 @@ h3.breaker {
 }
 
 .form-consent {
-  color: #fff;
   font-weight: 400;
   font-size: 12px;
 }
@@ -434,7 +413,6 @@ h3.breaker {
 .label-email {
   margin-bottom: 9px;
 
-  color: #fff;
   font-weight: normal;
   font-size: 18px;
 }
