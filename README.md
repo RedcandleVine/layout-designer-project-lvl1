@@ -17,4 +17,4 @@ $ make install
 ```sh
 make lint
 ```
-Проект "Когнитивные искажения" на [surge.sh](https://ten-finger.surge.sh/)
+Проект "Когнитивные искажения" на [surge.sh](https://smiling-jam.surge.sh/)
